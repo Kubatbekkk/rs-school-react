@@ -1,39 +1,28 @@
 import React, { Component } from 'react';
 
-export class Card extends Component {
+type PropsType = {
+  key: string;
+  name: string;
+  img: string;
+  desc: string;
+};
+
+export class Card extends Component<PropsType> {
   render() {
+    const { name, desc, img } = this.props;
     return (
       <div className="card">
-        <header className="card__header">Card Title</header>
+        <header className="card__header">{name}</header>
         <div className="card__wrapper">
           <section className="card__body">
-            <img
-              src="https://avatars.mds.yandex.net/i?id=d597b730b96172640031b92cce4c1e2b4097398a-8502968-images-thumbs&n=13"
-              alt="strawberry jam"
-              className="card__img"
-            />
-            <p className="card__desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem
-              asperioresdicta ex s dignissimos?
-            </p>
+            <img src={img} alt={desc} className="card__img" />
+            <p className="card__desc">{desc}</p>
           </section>
           <footer className="card__footer">
             <div className="card__footer-left">
-              <img
-                src="https://avatars.mds.yandex.net/i?id=d597b730b96172640031b92cce4c1e2b4097398a-8502968-images-thumbs&n=13"
-                alt="strawberry jam"
-                className="card__footer-left-img"
-              />
-              <img
-                src="https://avatars.mds.yandex.net/i?id=d597b730b96172640031b92cce4c1e2b4097398a-8502968-images-thumbs&n=13"
-                alt="strawberry jam"
-                className="card__footer-left-img"
-              />
-              <img
-                src="https://avatars.mds.yandex.net/i?id=d597b730b96172640031b92cce4c1e2b4097398a-8502968-images-thumbs&n=13"
-                alt="strawberry jam"
-                className="card__footer-left-img"
-              />
+              <img src={img} alt={name} className="card__footer-left-img" />
+              <img src={img} alt={name} className="card__footer-left-img" />
+              <img src={img} alt={name} className="card__footer-left-img" />
             </div>
             <a href="#" className="card__btn">
               more info...

@@ -6,9 +6,7 @@ import Main from './pages/Main';
 import AboutUs from './pages/AboutUs';
 import Error from './pages/Error';
 
-type AppState = Readonly<{ count: number }>;
-
-class App extends React.Component<unknown, AppState> {
+class App extends React.Component {
   render() {
     return (
       <BrowserRouter>

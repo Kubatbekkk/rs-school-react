@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+.header-logo {
+  border: 2px solid var(--tertiary-color);
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  padding: 0 .5rem;
+}
+
+.header-logo:hover {
+  transform: scale(1.025);
+}
+
 /* Container Util Component*/
 .container {
   width: 100%;
@@ -90,7 +101,7 @@
 
 
 .card__img {
-  height: 50%;
+  height: 60%;
   width: 100%;
   display: block;
   border-radius: .5rem;

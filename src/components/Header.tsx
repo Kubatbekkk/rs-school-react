@@ -7,7 +7,9 @@ export class Header extends Component {
     return (
       <nav className="nav">
         <Container>
-          <Link to={'/'}>Home</Link>
+          <Link to={'/'} className="header-logo">
+            TypeJam
+          </Link>
           <Link to={'/about'}>About</Link>
           <input type="text" className="nav__search" placeholder="Search" />
         </Container>

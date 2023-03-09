@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import type { Item } from '../data/items';
+import data from '../data/items';
 
-export class CardsList extends Component {
+type StateType = {
+  items: Array<Item>;
+};
+export class CardsList extends Component<{}, StateType> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      items: data,
+    };
+  }
   render() {
     return (
       <div className="main__card">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {this.state.items.map((item) => (
+          <Card key={item.id} name={item.name} img={item.img} desc={item.desc} />
+        ))}
       </div>
     );
   }
