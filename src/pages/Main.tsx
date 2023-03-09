@@ -1,8 +1,13 @@
+import Container from '../components/Utils/Container';
 import React, { Component } from 'react';
 
 class Main extends Component {
   render() {
-    return <h1>Main</h1>;
+    return (
+      <Container>
+        <h1>Main</h1>
+      </Container>
+    );
   }
 }
 

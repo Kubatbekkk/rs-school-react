@@ -6,7 +6,9 @@ export class Header extends Component {
     return (
       <nav className="nav">
         <Container>
-          <a href={'/'}>Home</a>
+          <a href={'/'} className={'nav__link'}>
+            Home
+          </a>
         </Container>
       </nav>
     );

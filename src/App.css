@@ -23,3 +23,8 @@
   justify-content: center;
   box-shadow: var(--box-shadow);
 }
+
+.nav__link {
+  font-size: 1.5rem;
+}
+
