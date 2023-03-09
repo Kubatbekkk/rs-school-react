@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import Container from './Utils/Container';
 
 export class Header extends Component {
   render() {
     return (
-      <nav>
-        <Link to={'/'}>Home</Link>
+      <nav className="nav">
+        <Container>
+          <a href={'/'}>Home</a>
+        </Container>
       </nav>
     );
   }

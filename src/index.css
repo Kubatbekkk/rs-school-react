@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+html {
+  font-family: Montserrat, sans-serif;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --primary-background: #F8F5E4;
+  --secondary-background: #F7C04A;
+  --box-shadow: 25px 25px 51px #bebebe, -25px -25px 51px #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,11 +31,8 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  background: var(--background-color);
 }
 
 h1 {
