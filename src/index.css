@@ -13,7 +13,9 @@ html {
   --primary-background: #F8F5E4;
   --secondary-background: #F7C04A;
   --box-shadow: 25px 25px 51px #bebebe, -25px -25px 51px #ffffff;
+  --card-box-shadow: 5px 5px 10px #cccccc, -5px -5px 10px #f4f4f4;
   --font-color: #3F497F;
+  --tertiary-color: #539165;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,6 +38,7 @@ body {
   min-height: 100vh;
   background: var(--background-color);
 }
+
 
 h1 {
   font-size: 3.2em;

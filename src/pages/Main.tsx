@@ -1,11 +1,14 @@
 import Container from '../components/Utils/Container';
 import React, { Component } from 'react';
+import CardsList from '../components/CardsList';
 
 class Main extends Component {
   render() {
     return (
       <Container>
-        <h1>Main</h1>
+        <main className="main">
+          <CardsList />
+        </main>
       </Container>
     );
   }
