@@ -43,13 +43,13 @@
   }
 }
 
-.nav__search {
-  border: none;
+.search {
+  border: 1px solid var(--font-color);
   font-size: 1.6rem;
-  margin-left: auto;
-  max-width: 14rem;
+  margin: 0 2.2rem .8rem 2.2rem;
   border-radius: .5rem;
   transition: .5s;
+  background: var(--primary-background);
 }
 
 @media screen and (max-width: 768px) {
@@ -59,7 +59,7 @@
   }
 }
 
-.nav__search:focus {
+.search:focus {
   outline: none;
 }
 

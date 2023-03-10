@@ -11,7 +11,6 @@ export class Header extends Component {
             TypeJam
           </Link>
           <Link to={'/about'}>About</Link>
-          <input type="text" className="nav__search" placeholder="Search" />
         </Container>
       </nav>
     );
