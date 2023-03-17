@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Container from './Utils/Container';
 
 export class Header extends Component {
-  render() {
+  render(): JSX.Element {
     return (
       <nav className="nav">
         <Container>

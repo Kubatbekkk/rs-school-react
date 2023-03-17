@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
+import type { CardPropsType } from 'types/types';
 
-type PropsType = {
-  key: string;
-  name: string;
-  img: string;
-  desc: string;
-};
-
-export class Card extends Component<PropsType> {
-  render() {
+export class Card extends Component<CardPropsType> {
+  render(): JSX.Element {
     const { name, desc, img } = this.props;
     return (
       <div className="card">

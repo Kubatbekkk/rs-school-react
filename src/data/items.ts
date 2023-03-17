@@ -1,9 +1,4 @@
-export type Item = {
-  id: string;
-  name: string;
-  desc: string;
-  img: string;
-};
+import type { Item } from 'types/types';
 
 const items: Item[] = [
   {

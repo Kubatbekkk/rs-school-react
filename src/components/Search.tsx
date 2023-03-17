@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
+import type { SearchPropsType, SearchStateType } from 'types/types';
 
-type SearchProps = {};
-
-interface SearchState {
-  searchTerm: string;
-}
-
-export class Search extends Component<SearchProps, SearchState> {
-  constructor(props: SearchProps) {
+export class Search extends Component<SearchPropsType, SearchStateType> {
+  constructor(props: SearchPropsType) {
     super(props);
     this.state = {
       searchTerm: localStorage.getItem('searchTerm') || '',
@@ -29,7 +24,7 @@ export class Search extends Component<SearchProps, SearchState> {
     this.setState({ searchTerm: e.target.value });
   };
 
-  render() {
+  render(): JSX.Element {
     return (
       <input
         type="text"

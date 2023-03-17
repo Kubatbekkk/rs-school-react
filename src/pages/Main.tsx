@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import CardsList from '../components/CardsList';
 
 class Main extends Component {
-  render() {
+  render(): JSX.Element {
     return (
       <Container>
         <main className="main">

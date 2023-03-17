@@ -1,11 +1,8 @@
-import React, { Component, ReactNode } from 'react';
+import React, { Component } from 'react';
+import type { ContainerPropsType } from 'types/types';
 
-interface PropsType {
-  children: ReactNode;
-}
-
-export class Container extends Component<PropsType> {
-  render() {
+export class Container extends Component<ContainerPropsType> {
+  render(): JSX.Element {
     return <div className="container">{this.props.children}</div>;
   }
 }

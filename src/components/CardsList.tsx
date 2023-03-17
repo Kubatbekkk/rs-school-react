@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import Card from './Card';
-import type { Item } from '../data/items';
 import data from '../data/items';
 import Search from './Search';
+import type { CardListStateType } from 'types/types';
 
-type StateType = {
-  items: Array<Item>;
-};
-
-export class CardsList extends Component<{}, StateType> {
+export class CardsList extends Component<{}, CardListStateType> {
   constructor(props: {}) {
     super(props);
     this.state = {
       items: data,
     };
   }
-  render() {
+  render(): JSX.Element {
     return (
       <>
         <Search />
