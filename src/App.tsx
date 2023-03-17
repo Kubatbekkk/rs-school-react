@@ -7,7 +7,7 @@ import AboutUs from './pages/AboutUs';
 import Error from './pages/Error';
 
 class App extends React.Component {
-  render() {
+  render(): JSX.Element {
     return (
       <BrowserRouter>
         <Header />
