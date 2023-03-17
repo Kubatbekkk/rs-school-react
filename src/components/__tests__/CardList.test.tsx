@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import CardsList from '../components/CardsList';
+import CardsList from '../CardsList';
 
 test('renders CardList component', () => {
   const { getByTestId } = render(<CardsList />);
