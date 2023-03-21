@@ -1,16 +1,30 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Container from './Utils/Container';
+import classes from './Header.module.css';
 
 export class Header extends Component {
   render(): JSX.Element {
     return (
       <nav className="nav">
         <Container>
-          <Link to={'/'} className="header-logo">
+          <NavLink to={'/'} className="header-logo">
             TypeJam
-          </Link>
-          <Link to={'/about'}>About</Link>
+          </NavLink>
+          <NavLink
+            end
+            to={'/'}
+            className={({ isActive }) => (isActive ? classes.active : undefined)}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            end
+            to={'/about'}
+            className={({ isActive }) => (isActive ? classes.active : undefined)}
+          >
+            About
+          </NavLink>
         </Container>
       </nav>
     );
