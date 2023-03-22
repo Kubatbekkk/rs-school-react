@@ -1,0 +1,16 @@
+.form__main {
+  background: var(--primary-background);
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.form__header {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
