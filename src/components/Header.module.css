@@ -1,7 +1,10 @@
 .active {
-  background: var(--primary-background);
-  opacity: 0.8;
+  background: var(--tertiary-color);
   border-radius: 5px;
   padding: 0 6px 0 6px;
+  color: var(--primary-background);
+}
+.active:hover {
+  color: var(--primary-background);
 }
 

@@ -6,13 +6,13 @@ export class Card extends Component<CardPropsType> {
     const { name, desc, img } = this.props;
     return (
       <div className="card">
-        <header className="card__header">{name}</header>
+        <div className="card__header">{name}</div>
         <div className="card__wrapper">
           <section className="card__body">
             <img src={img} alt={desc} className="card__img" />
             <p className="card__desc">{desc}</p>
           </section>
-          <footer className="card__footer">
+          <div className="card__footer">
             <div className="card__footer-left">
               <img src={img} alt={name} className="card__footer-left-img" />
               <img src={img} alt={name} className="card__footer-left-img" />
@@ -21,7 +21,7 @@ export class Card extends Component<CardPropsType> {
             <a href="#" className="card__btn">
               more info...
             </a>
-          </footer>
+          </div>
         </div>
       </div>
     );
