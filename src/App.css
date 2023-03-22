@@ -1,0 +1,149 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-logo {
+  border: 2px solid var(--tertiary-color);
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  padding: 0 .5rem;
+}
+
+.header-logo:hover {
+  transform: scale(1.025);
+}
+
+/* Container Util Component*/
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+}
+
+/* Header Component */
+.nav {
+  min-height: 5rem;
+  width: 100vw;
+  background: var(--secondary-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1161px) {
+  .nav {
+    padding: 0 1rem;
+  }
+}
+
+.search {
+  border: 1px solid var(--font-color);
+  font-size: 1.6rem;
+  margin: 0 2.2rem .8rem 2.2rem;
+  border-radius: .5rem;
+  transition: .5s;
+  background: var(--primary-background);
+}
+
+@media screen and (max-width: 768px) {
+  .nav__search {
+    font-size: 1.2rem;
+    max-width: 11rem;
+  }
+}
+
+.search:focus {
+  outline: none;
+}
+
+.main {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.main__card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+  justify-items: center;
+  grid-gap: 2rem;
+}
+
+.card {
+  max-width: 18rem;
+  height: 20rem;
+  padding: .5rem;
+  border: .5px solid var(--tertiary-color);
+  border-radius: .5rem;
+  box-shadow: var(--card-box-shadow);
+  transition: transform .5s;
+}
+.card:hover {
+  transform: scale(1.025);
+}
+
+.card__header {
+  padding-bottom: .3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card__wrapper {
+  height: 85%;
+}
+
+
+
+.card__img {
+  height: 60%;
+  width: 100%;
+  display: block;
+  border-radius: .5rem;
+  object-fit: cover;
+}
+
+.card__desc {
+  margin: .5rem 0;
+  font-size: .9rem;
+  text-align: start;
+  max-height: 3rem;
+  overflow: hidden;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__footer-left {
+  display: flex;
+}
+
+.card__footer-left-img {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.card__footer-left-img:not(:first-child) {
+  margin-left: -.5rem;
+}
+
+.card__btn {
+  border: none;
+  background: var(--primary-color);
+  color: var(--secondary-background);
+  border-radius: .5rem;
+  font-size: .8rem;
+  transition: .5s;
+}
+
+.card__btn:hover {
+  background: var(--secondary-color);
+}
