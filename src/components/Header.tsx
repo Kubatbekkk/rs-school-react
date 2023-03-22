@@ -25,6 +25,13 @@ export class Header extends Component {
           >
             About
           </NavLink>
+          <NavLink
+            end
+            to={'/form'}
+            className={({ isActive }) => (isActive ? classes.active : undefined)}
+          >
+            Form
+          </NavLink>
         </Container>
       </nav>
     );
